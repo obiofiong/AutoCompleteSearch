@@ -1,0 +1,17 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    margin: 6em auto 0 ;
+    /* margin-top: 5em; */
+    /* height: calc(100% - 560px); */
+}
+.main h1{ 
+    margin-bottom: 0.2em;
+    font-size: 2em;
+}
+.main p{
+    font-size: 1em;
+    margin-bottom: 1.5em
+}
