@@ -1,16 +1,13 @@
 import React, { useState } from "react";
-import countryList from "../resources/countryList";
 import "./autoComplete.css";
 
-function AutoComplete() {
+function AutoComplete({data}) {
 	const [query, setQuery] = useState("");
 	const [suggestions, setSuggestions] = useState([]);
 
 	const handleInputChange = (e) => {
 		const entry = e.target.value;
 		let suggestion = [];
-
-		const data = countryList;
 
 		if (entry.length > 0) {
             const regex = new RegExp(`^${entry}`, "i");
