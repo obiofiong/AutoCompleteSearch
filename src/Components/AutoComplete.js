@@ -27,12 +27,11 @@ function AutoComplete() {
 	const suggestionDisplay = suggestions.slice(0,10).map((suggestion, index) => (
 		<li onClick = {() => handleChoice(suggestion)} key={index}>{suggestion}</li>
 	));
-	console.log("suggest", suggestions);
 
 	return (
 		<div className ="autoComplete">
             <div className="autoCompleteInput">
-    			<input type="text" value={query} onChange={handleInputChange} />
+    			<input type="text" value={query} onChange={handleInputChange} placeholder = "Start typing..." />
             </div>
             {(suggestions.length !== 0) && <ul>{suggestionDisplay}</ul>}
 		</div>

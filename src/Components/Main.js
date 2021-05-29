@@ -6,7 +6,7 @@ function Main() {
 	return (
 		<div className ="main">
 			<h1>Auto Complete Search</h1>
-			<p>Search for a country's name</p>
+			<p>Input any letter and watch it auto-suggest countries to you</p>
 			<AutoComplete />
 		</div>
 	);
