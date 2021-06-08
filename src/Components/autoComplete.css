@@ -2,13 +2,14 @@
 	width: 90%;
 }
 
+
 .autoCompleteInput input {
 	/* max-width: 736px; */
   /* text-align: center; */
 	width: 100%;
 	height: 38px;
 	font-size: 16px;
-	margin: 0.2em 2.5em 0 0.2em;
+	margin: 0.2em 0em 0 0.2em;
 	outline: none;
 	border: none;
 }
@@ -25,6 +26,10 @@
 	box-shadow: -1px 2px 4px 0px #dfe1e5;
 	width: 90%;
 	max-width: 700px;
+	z-index: 10;
+}
+.autoComplete:hover {
+	box-shadow: -1px 2px 9px 0px #9aa0ab;
 }
 .autoComplete ul {
 	list-style: none;
